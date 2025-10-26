@@ -39,31 +39,31 @@ Conforme solicitado, seguem as telas da aplicação com explicações de impleme
 
 * **Descrição:** Tela principal do CRUD. Lista todos os contatos existentes e permite iniciar as ações de Criar, Editar, Detalhar, Excluir e Pesquisar.
 * **Implementação:** É a `Views/Contatos/Index.cshtml`. Ela recebe uma `IEnumerable<Contato>` do `ContatosController`. Inclui botões coloridos, tabela zebrada (`table-striped`) e um formulário GET para a funcionalidade de pesquisa por nome.
-* **PRINT DA TELA DE LISTAGEM (COM ALGUNS CONTATOS) AQUI**
+<img width="1129" height="205" alt="image" src="https://github.com/user-attachments/assets/912b5705-4166-4d59-80e8-8e0e45bfbafd" />
 
 ### Tela 3: Pesquisa por Nome
 
 * **Descrição:** Funcionalidade na tela de listagem que filtra os contatos cujo nome contenha o texto digitado.
 * **Implementação:** O formulário da `Index.cshtml` envia uma string `pesquisaNome` para a Action `Index` do `ContatosController`, que filtra a lista usando `Where()` antes de passá-la para a View.
-* **PRINT DA TELA MOSTRANDO UM RESULTADO DE PESQUISA AQUI**
+<img width="1268" height="331" alt="image" src="https://github.com/user-attachments/assets/1b2352cf-c9c4-4dee-a06e-5218eccbcc08" />
 
 ### Tela 4: Criação de Contato (Create)
 
 * **Descrição:** Formulário para adicionar um novo contato.
 * **Implementação:** `Views/Contatos/Create.cshtml`. Utiliza Tag Helpers (`asp-for`, `asp-validation-for`). O campo "Tipo de Contato" é um `<select>` populado por um `Enum` (`TipoContato`) enviado pelo Controller via `ViewBag`.
-* **PRINT DA TELA DE CRIAÇÃO AQUI**
+<img width="1241" height="519" alt="image" src="https://github.com/user-attachments/assets/b1f9deaf-b67c-4a11-ad34-666d3ca6eeb3" />
 
 ### Tela 5: Edição de Contato (Edit)
 
 * **Descrição:** Formulário pré-preenchido para alterar um contato existente.
 * **Implementação:** Similar à tela de Create (`Views/Contatos/Edit.cshtml`), mas utiliza um `<input type="hidden" asp-for="Id" />` para rastrear o contato que está sendo editado.
-* **PRINT DA TELA DE EDIÇÃO AQUI**
+<img width="493" height="614" alt="image" src="https://github.com/user-attachments/assets/c8ff3bb6-a0f2-43e6-a780-6be19ccda5bd" />
 
 ### Tela 6: Confirmação de Remoção (Delete)
 
 * **Descrição:** Tela de confirmação exigida antes de excluir um contato.
 * **Implementação:** `Views/Contatos/Delete.cshtml`. Mostra os dados do contato e pede confirmação. Ao confirmar, envia um POST para a Action `DeleteConfirmed` no Controller.
-* **PRINT DA TELA DE CONFIRMAÇÃO DE DELETE AQUI**
+<img width="680" height="495" alt="image" src="https://github.com/user-attachments/assets/48648a3f-2dd6-49a2-822a-039c0583d33d" />
 
 ---
 
