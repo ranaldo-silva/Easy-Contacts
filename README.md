@@ -21,6 +21,7 @@ O projeto "Easy Contacts" é uma aplicação Web desenvolvida em ASP.NET Core MV
 
 (Conforme solicitado, um diagrama simples das classes principais do projeto)
 
+<img width="841" height="622" alt="image" src="https://github.com/user-attachments/assets/f0c0a79a-ca86-4197-9b61-6153e8a555f3" />
 
 ---
 
