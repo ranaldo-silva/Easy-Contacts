@@ -51,7 +51,7 @@ Conforme solicitado, seguem as telas da aplicação com explicações de impleme
 
 * **Descrição:** Formulário para adicionar um novo contato.
 * **Implementação:** `Views/Contatos/Create.cshtml`. Utiliza Tag Helpers (`asp-for`, `asp-validation-for`). O campo "Tipo de Contato" é um `<select>` populado por um `Enum` (`TipoContato`) enviado pelo Controller via `ViewBag`.
-<img width="1241" height="519" alt="image" src="https://github.com/user-attachments/assets/b1f9deaf-b67c-4a11-ad34-666d3ca6eeb3" />
+<img width="553" height="627" alt="image" src="https://github.com/user-attachments/assets/f6810844-e520-4df2-9170-10b1c2fdea15" />
 
 ### Tela 5: Edição de Contato (Edit)
 
